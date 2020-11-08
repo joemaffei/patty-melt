@@ -1,4 +1,4 @@
-import { pattyMelt, Tests } from './pattyMelt';
+import { defaultCase, pattyMelt, Tests } from './pattyMelt';
 
 describe('pattyMelt', () => {
   it('returns false when no tests are provided in the array', () => {
@@ -49,5 +49,11 @@ describe('pattyMelt', () => {
   it('works with function matchers', () => {
     expect(pattyMelt(-1, [[n => (n < 0), 'negative']])).toEqual('negative');
     expect(pattyMelt(-1, [[n => (n > 0), 'positive']])).toEqual(false);
+  });
+
+  it('returns the value of item[1] when item[0] is the defaultCase symbol and there are no matches', () => {
+    const tests: Tests<number, string> = [[0, 'zero'], [1, 'one'], [defaultCase, 'default']];
+
+    expect(pattyMelt(2, tests)).toEqual('default');
   });
 });

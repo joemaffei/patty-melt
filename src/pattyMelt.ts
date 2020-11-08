@@ -1,4 +1,6 @@
-export type Test<V, R> = [V | RegExp | ((value: V) => boolean), R | (() => R)];
+export const defaultCase = Symbol('defaultCase');
+
+export type Test<V, R> = [V | RegExp | ((value: V) => boolean) | typeof defaultCase, R | (() => R)];
 
 export type Tests<V, R> = Test<V, R>[];
 
@@ -13,9 +15,24 @@ export function pattyMelt<V = any, R = any>(value: V, tests: Tests<V, R>, option
   if (tests.length === 0) return false;
 
   let returnWhenMultiple = false;
+  let defaultResult;
+  let defaultResultSet = false;
 
   for (const [matcher, result] of tests) {
+    if (matcher === defaultCase) {
+      defaultResultSet = true;
+
+      if (typeof result === 'function') {
+        // @ts-ignore TODO: figure out why result is typed here as (() => R) | (R & Function)
+        defaultResult = result();
+      } else {
+        defaultResult = result;
+      }
+      continue;
+    }
+
     let match = value === matcher;
+
     if (matcher instanceof RegExp) {
       if (typeof value === 'object') {
         match = matcher.test(JSON.stringify(value));
@@ -41,5 +58,9 @@ export function pattyMelt<V = any, R = any>(value: V, tests: Tests<V, R>, option
     }
   }
 
-  return returnWhenMultiple;
+  if (defaultResultSet) {
+    return defaultResult;
+  } else {
+    return returnWhenMultiple;
+  }
 }
