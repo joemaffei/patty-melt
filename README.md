@@ -6,7 +6,7 @@ Pattern matching in JavaScript and Typescript made simple.
 ### Assign values conditionally
 
 ```js
-import pattyMelt from 'patty-melt';
+import { pattyMelt } from 'patty-melt';
 
 const today = (new Date()).getDay();
 
@@ -26,7 +26,7 @@ console.log(`Have a fantastic ${dayOfTheWeek}!`);
 ### Simplify switch statements
 
 ```js
-import pattyMelt from 'patty-melt';
+import { pattyMelt } from 'patty-melt';
 import getDayOfYear from 'date-fns/getDayOfYear';
 
 const today = getDayOfYear(new Date());
@@ -53,7 +53,7 @@ pattyMelt(today, [
 Or, if you prefer a more familiar syntax: 
 
 ```js
-import pattyMelt, { defaultCase } from 'patty-melt';
+import { defaultCase, pattyMelt } from 'patty-melt';
 import getDayOfYear from 'date-fns/getDayOfYear';
 
 const today = getDayOfYear(new Date());
@@ -68,7 +68,7 @@ pattyMelt(today, [
 ### Match values using regular expressions
 
 ```js
-import pattyMelt from 'patty-melt';
+import { pattyMelt } from 'patty-melt';
 
 const today = (new Date()).toString();
 
@@ -81,7 +81,7 @@ pattyMelt(today, [
 ### Match values using functions
 
 ```js
-import pattyMelt from 'patty-melt';
+import { pattyMelt } from 'patty-melt';
 
 const today = (new Date()).getDay();
 
