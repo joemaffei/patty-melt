@@ -45,4 +45,9 @@ describe('pattyMelt', () => {
     expect(pattyMelt({ abc: 123 }, [[/^{"abc":123}$/, 'object matches']])).toEqual('object matches');
     expect(pattyMelt(new Date(2020, 3, 1), [[/2020-04-01/, 'date matches']])).toEqual('date matches');
   });
+
+  it('works with function matchers', () => {
+    expect(pattyMelt(-1, [[n => (n < 0), 'negative']])).toEqual('negative');
+    expect(pattyMelt(-1, [[n => (n > 0), 'positive']])).toEqual(false);
+  });
 });

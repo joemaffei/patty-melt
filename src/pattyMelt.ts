@@ -1,6 +1,6 @@
-export type Test<V, R> = [V, R | (() => R)];
+export type Test<V, R> = [V | RegExp | ((value: V) => boolean), R | (() => R)];
 
-export type Tests<V, R> = Test<V | RegExp, R>[];
+export type Tests<V, R> = Test<V, R>[];
 
 export type Result<R> = R | boolean;
 
@@ -14,14 +14,17 @@ export function pattyMelt<V = any, R = any>(value: V, tests: Tests<V, R>, option
 
   let returnWhenMultiple = false;
 
-  for (const [comparator, result] of tests) {
-    let match = value === comparator;
-    if (comparator instanceof RegExp) {
+  for (const [matcher, result] of tests) {
+    let match = value === matcher;
+    if (matcher instanceof RegExp) {
       if (typeof value === 'object') {
-        match = comparator.test(JSON.stringify(value));
+        match = matcher.test(JSON.stringify(value));
       } else {
-        match = comparator.test(`${value}`);
+        match = matcher.test(`${value}`);
       }
+    } else if (typeof matcher === 'function') {
+      // @ts-ignore TODO: figure out why result is typed here as (() => R) | (R & Function)
+      match = matcher(value);
     }
 
     if (match) {
