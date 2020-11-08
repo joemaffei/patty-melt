@@ -1,6 +1,10 @@
 export const defaultCase = Symbol('defaultCase');
 
-export type Test<V, R> = [V | RegExp | ((value: V) => boolean) | typeof defaultCase, R | (() => R)];
+export type MatcherFunction<V> = (value: V) => boolean;
+
+export type ResultFunction<R> = () => R;
+
+export type Test<V, R> = [V | RegExp | MatcherFunction<V> | typeof defaultCase, R | (() => R)];
 
 export type Tests<V, R> = Test<V, R>[];
 
@@ -11,11 +15,12 @@ export type Options = {
   multiple?: boolean;
 };
 
-export function pattyMelt<V = any, R = any>(value: V, tests: Tests<V, R>, options?: Options): Result<R> {
+
+export function pattyMelt<V, R>(value: V, tests: Tests<V, R>, options?: Options): Result<R> {
   if (tests.length === 0) return false;
 
   let returnWhenMultiple = false;
-  let defaultResult;
+  let defaultResult: Result<R> = false;
   let defaultResultSet = false;
 
   for (const [matcher, result] of tests) {
@@ -23,8 +28,7 @@ export function pattyMelt<V = any, R = any>(value: V, tests: Tests<V, R>, option
       defaultResultSet = true;
 
       if (typeof result === 'function') {
-        // @ts-ignore TODO: figure out why result is typed here as (() => R) | (R & Function)
-        defaultResult = result();
+        defaultResult = (result as ResultFunction<R>)();
       } else {
         defaultResult = result;
       }
@@ -40,8 +44,7 @@ export function pattyMelt<V = any, R = any>(value: V, tests: Tests<V, R>, option
         match = matcher.test(`${value}`);
       }
     } else if (typeof matcher === 'function') {
-      // @ts-ignore TODO: figure out why result is typed here as (() => R) | (R & Function)
-      match = matcher(value);
+      match = (matcher as MatcherFunction<V>)(value);
     }
 
     if (match) {
@@ -51,8 +54,7 @@ export function pattyMelt<V = any, R = any>(value: V, tests: Tests<V, R>, option
       }
 
       if (typeof result === 'function') {
-        // @ts-ignore TODO: figure out why result is typed here as (() => R) | (R & Function)
-        return result();
+        return (result as ResultFunction<R>)();
       }
       return result;
     }

@@ -1,4 +1,4 @@
-import { defaultCase, pattyMelt, Tests } from './pattyMelt';
+import { defaultCase, pattyMelt, Tests } from '../src';
 
 describe('pattyMelt', () => {
   it('returns false when no tests are provided in the array', () => {
