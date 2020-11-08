@@ -1,5 +1,5 @@
 # patty-melt (WIP)
-Pattern matching in Javascript made simple.
+Pattern matching in JavaScript and Typescript made simple.
 
 ## Examples
 
