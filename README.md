@@ -1,4 +1,4 @@
-# patty-melt (WIP)
+# patty-melt
 Pattern matching in JavaScript and Typescript made simple.
 
 ## Examples
