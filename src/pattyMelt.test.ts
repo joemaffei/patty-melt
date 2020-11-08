@@ -40,4 +40,9 @@ describe('pattyMelt', () => {
     expect(pattyMelt('b', tests)).toEqual('bee');
     expect(pattyMelt('c', tests)).toEqual(false);
   });
+
+  it('stringifies objects when matched against regular expressions', () => {
+    expect(pattyMelt({ abc: 123 }, [[/^{"abc":123}$/, 'object matches']])).toEqual('object matches');
+    expect(pattyMelt(new Date(2020, 3, 1), [[/2020-04-01/, 'date matches']])).toEqual('date matches');
+  });
 });

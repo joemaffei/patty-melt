@@ -17,7 +17,11 @@ export function pattyMelt<V = any, R = any>(value: V, tests: Tests<V, R>, option
   for (const [comparator, result] of tests) {
     let match = value === comparator;
     if (comparator instanceof RegExp) {
-      match = comparator.test(`${value}`);
+      if (typeof value === 'object') {
+        match = comparator.test(JSON.stringify(value));
+      } else {
+        match = comparator.test(`${value}`);
+      }
     }
 
     if (match) {
