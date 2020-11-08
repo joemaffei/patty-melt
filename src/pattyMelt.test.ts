@@ -25,4 +25,19 @@ describe('pattyMelt', () => {
     expect(fn0).toHaveBeenCalledTimes(1);
     expect(fn1).toHaveBeenCalledTimes(1);
   });
+
+  it('when options.multiple is true, it returns true instead of the first matching result', () => {
+    const tests: Tests<number, string> = [[0, 'first zero'], [0, 'second zero']];
+
+    expect(pattyMelt(0, tests, { multiple: true })).toEqual(true);
+  });
+
+  it('works with regex matchers', () => {
+    const tests: Tests<string, string> = [[/a/, 'ay'], [/b/, 'bee']];
+
+    expect(pattyMelt('a', tests)).toEqual('ay');
+    expect(pattyMelt('ab', tests)).toEqual('ay');
+    expect(pattyMelt('b', tests)).toEqual('bee');
+    expect(pattyMelt('c', tests)).toEqual(false);
+  });
 });
