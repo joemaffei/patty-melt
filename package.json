@@ -1,6 +1,6 @@
 {
   "name": "patty-melt",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Pattern matching in JavaScript and Typescript made simple.",
   "main": "src/index.ts",
   "scripts": {
