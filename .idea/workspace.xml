@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f18900ec-d8b3-4d54-b0ca-0515480b762b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="ProjectId" id="1jyt6PEg8atJ5sA9q05LYzLQIjX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSX Harmony" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../patty-melt-test" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="ts.external.directory.path" value="C:\Projects\patty-melt\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\patty-melt\__tests__" />
+      <recent name="C:\Projects\patty-melt" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Jest.pattyMelt.returns the value of item[1] when item[0] is the defaultCase symbol and there are no matches">
+    <configuration name="pattyMelt.returns the value of item[1] when item[0] is the defaultCase symbol and there are no matches" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/src" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/pattyMelt.test.ts" />
+      <test-names>
+        <test-name value="pattyMelt" />
+        <test-name value="returns the value of item[1] when item[0] is the defaultCase symbol and there are no matches" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="pattyMelt.stringifies objects when matched against regular expressions" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/src" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/pattyMelt.test.ts" />
+      <test-names>
+        <test-name value="pattyMelt" />
+        <test-name value="stringifies objects when matched against regular expressions" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="pattyMelt.when options.multiple is true, it returns true instead of the first matching result" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/src" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/pattyMelt.test.ts" />
+      <test-names>
+        <test-name value="pattyMelt" />
+        <test-name value="when options.multiple is true, it returns true instead of the first matching result" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="pattyMelt.works with function matchers" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/src" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/pattyMelt.test.ts" />
+      <test-names>
+        <test-name value="pattyMelt" />
+        <test-name value="works with function matchers" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="pattyMelt.works with regex matchers" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/src" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/pattyMelt.test.ts" />
+      <test-names>
+        <test-name value="pattyMelt" />
+        <test-name value="works with regex matchers" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.pattyMelt.returns the value of item[1] when item[0] is the defaultCase symbol and there are no matches" />
+        <item itemvalue="Jest.pattyMelt.works with function matchers" />
+        <item itemvalue="Jest.pattyMelt.stringifies objects when matched against regular expressions" />
+        <item itemvalue="Jest.pattyMelt.works with regex matchers" />
+        <item itemvalue="Jest.pattyMelt.when options.multiple is true, it returns true instead of the first matching result" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f18900ec-d8b3-4d54-b0ca-0515480b762b" name="Default Changelist" comment="" />
+      <created>1604787982954</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604787982954</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Implement basic functionality">
+      <created>1604800123508</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604800123508</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Implement regex matching">
+      <created>1604806833995</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604806833995</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Implement regex matching">
+      <created>1604807690349</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604807690349</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Implement function matchers">
+      <created>1604808370697</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604808370697</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Implement defaultCase">
+      <created>1604809097110</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604809097110</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Exclude tests from build; fix typing TODOs;">
+      <created>1604810854936</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604810854936</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fix syntax error in the README">
+      <created>1604812023638</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604812023638</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fix description in README">
+      <created>1604812555579</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1604812555579</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implement basic functionality" />
+    <MESSAGE value="Implement regex matching" />
+    <MESSAGE value="Implement function matchers" />
+    <MESSAGE value="Implement defaultCase" />
+    <MESSAGE value="Exclude tests from build; fix typing TODOs;" />
+    <MESSAGE value="Fix syntax error in the README" />
+    <MESSAGE value="Fix description in README" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix description in README" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="997" y="328" key="#TypeScript" timestamp="1604788720936">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="997" y="328" key="#TypeScript/352.1440.1920.1170/0.0.2560.1410/2560.-170.2560.1410@0.0.2560.1410" timestamp="1604788720936" />
+    <state x="92" y="92" width="2376" height="1226" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1604807403606">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="92" y="92" width="2376" height="1226" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/352.1440.1920.1170/0.0.2560.1410/2560.-170.2560.1410@0.0.2560.1410" timestamp="1604807403606" />
+    <state width="398" height="630" key="DebuggerActiveHint" timestamp="1604796429986">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="398" height="630" key="DebuggerActiveHint/352.1440.1920.1170/0.0.2560.1410/2560.-170.2560.1410@0.0.2560.1410" timestamp="1604796429986" />
+    <state x="1059" y="459" key="FileChooserDialogImpl" timestamp="1605486878385">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1059" y="459" key="FileChooserDialogImpl/352.1440.1920.1170/0.0.2560.1410/2560.-170.2560.1410@0.0.2560.1410" timestamp="1605486878385" />
+    <state width="2537" height="252" key="GridCell.Tab.0.bottom" timestamp="1604810884158">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2537" height="252" key="GridCell.Tab.0.bottom/352.1440.1920.1170/0.0.2560.1410/2560.-170.2560.1410@0.0.2560.1410" timestamp="1604810884158" />
+    <state width="2537" height="252" key="GridCell.Tab.0.center" timestamp="1604810884158">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2537" height="252" key="GridCell.Tab.0.center/352.1440.1920.1170/0.0.2560.1410/2560.-170.2560.1410@0.0.2560.1410" timestamp="1604810884158" />
+    <state width="2537" height="252" key="GridCell.Tab.0.left" timestamp="1604810884158">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2537" height="252" key="GridCell.Tab.0.left/352.1440.1920.1170/0.0.2560.1410/2560.-170.2560.1410@0.0.2560.1410" timestamp="1604810884158" />
+    <state width="2537" height="252" key="GridCell.Tab.0.right" timestamp="1604810884158">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2537" height="252" key="GridCell.Tab.0.right/352.1440.1920.1170/0.0.2560.1410/2560.-170.2560.1410@0.0.2560.1410" timestamp="1604810884158" />
+    <state width="2537" height="506" key="GridCell.Tab.1.bottom" timestamp="1604810884154">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2537" height="506" key="GridCell.Tab.1.bottom/352.1440.1920.1170/0.0.2560.1410/2560.-170.2560.1410@0.0.2560.1410" timestamp="1604810884154" />
+    <state width="2537" height="506" key="GridCell.Tab.1.center" timestamp="1604810884154">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2537" height="506" key="GridCell.Tab.1.center/352.1440.1920.1170/0.0.2560.1410/2560.-170.2560.1410@0.0.2560.1410" timestamp="1604810884154" />
+    <state width="2537" height="506" key="GridCell.Tab.1.left" timestamp="1604810884154">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2537" height="506" key="GridCell.Tab.1.left/352.1440.1920.1170/0.0.2560.1410/2560.-170.2560.1410@0.0.2560.1410" timestamp="1604810884154" />
+    <state width="2537" height="506" key="GridCell.Tab.1.right" timestamp="1604810884154">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2537" height="506" key="GridCell.Tab.1.right/352.1440.1920.1170/0.0.2560.1410/2560.-170.2560.1410@0.0.2560.1410" timestamp="1604810884154" />
+    <state width="2537" height="506" key="GridCell.Tab.2.bottom" timestamp="1604810884155">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2537" height="506" key="GridCell.Tab.2.bottom/352.1440.1920.1170/0.0.2560.1410/2560.-170.2560.1410@0.0.2560.1410" timestamp="1604810884155" />
+    <state width="2537" height="506" key="GridCell.Tab.2.center" timestamp="1604810884154">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2537" height="506" key="GridCell.Tab.2.center/352.1440.1920.1170/0.0.2560.1410/2560.-170.2560.1410@0.0.2560.1410" timestamp="1604810884154" />
+    <state width="2537" height="506" key="GridCell.Tab.2.left" timestamp="1604810884154">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2537" height="506" key="GridCell.Tab.2.left/352.1440.1920.1170/0.0.2560.1410/2560.-170.2560.1410@0.0.2560.1410" timestamp="1604810884154" />
+    <state width="2537" height="506" key="GridCell.Tab.2.right" timestamp="1604810884154">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2537" height="506" key="GridCell.Tab.2.right/352.1440.1920.1170/0.0.2560.1410/2560.-170.2560.1410@0.0.2560.1410" timestamp="1604810884154" />
+    <state width="2537" height="506" key="GridCell.Tab.3.bottom" timestamp="1604810884154">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2537" height="506" key="GridCell.Tab.3.bottom/352.1440.1920.1170/0.0.2560.1410/2560.-170.2560.1410@0.0.2560.1410" timestamp="1604810884154" />
+    <state width="2537" height="506" key="GridCell.Tab.3.center" timestamp="1604810884154">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2537" height="506" key="GridCell.Tab.3.center/352.1440.1920.1170/0.0.2560.1410/2560.-170.2560.1410@0.0.2560.1410" timestamp="1604810884154" />
+    <state width="2537" height="506" key="GridCell.Tab.3.left" timestamp="1604810884154">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2537" height="506" key="GridCell.Tab.3.left/352.1440.1920.1170/0.0.2560.1410/2560.-170.2560.1410@0.0.2560.1410" timestamp="1604810884154" />
+    <state width="2537" height="506" key="GridCell.Tab.3.right" timestamp="1604810884154">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2537" height="506" key="GridCell.Tab.3.right/352.1440.1920.1170/0.0.2560.1410/2560.-170.2560.1410@0.0.2560.1410" timestamp="1604810884154" />
+    <state x="780" y="349" key="SettingsEditor" timestamp="1604789617954">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="780" y="349" key="SettingsEditor/352.1440.1920.1170/0.0.2560.1410/2560.-170.2560.1410@0.0.2560.1410" timestamp="1604789617954" />
+    <state x="871" y="435" key="Vcs.Push.Dialog.v2" timestamp="1604812030834">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="871" y="435" key="Vcs.Push.Dialog.v2/352.1440.1920.1170/0.0.2560.1410/2560.-170.2560.1410@0.0.2560.1410" timestamp="1604812030834" />
+    <state x="943" y="317" width="672" height="678" key="search.everywhere.popup" timestamp="1604806916064">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="943" y="317" width="672" height="678" key="search.everywhere.popup/352.1440.1920.1170/0.0.2560.1410/2560.-170.2560.1410@0.0.2560.1410" timestamp="1604806916064" />
+  </component>
+</project>
