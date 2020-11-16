@@ -90,3 +90,45 @@ pattyMelt(today, [
   [day => (day > 0 && day < 6), () => console.log('Enjoy your weekend!')],
 ]);
 ```
+
+### Refactor variable reassignment with a declarative syntax
+
+Before:
+
+```js
+const value = Math.ceil(Math.random() * 20)  - 10;
+
+let message = '';
+
+if (value > 0) {
+    message = 'value is positive';
+} else {
+    message = 'value is zero or negative';
+}
+```
+
+First refactor:
+
+```js
+import { pattyMelt } from 'patty-melt';
+
+const value = Math.ceil(Math.random() * 20)  - 10;
+
+const message = pattyMelt(value > 0, [
+    [true, 'value is positive'],
+    [false, 'value is zero or negative']
+]);
+```
+
+Second refactor (way more declarative!):
+
+```js
+import { pattyMelt } from 'patty-melt';
+
+const value = Math.ceil(Math.random() * 20)  - 10;
+
+const message = pattyMelt(value, [
+    [x => (x > 0), 'value is positive'],
+    [x => (x <= 0), 'value is zero or negative']
+]);
+```
