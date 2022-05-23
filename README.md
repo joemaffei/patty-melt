@@ -86,8 +86,8 @@ import { pattyMelt } from 'patty-melt';
 const today = (new Date()).getDay();
 
 pattyMelt(today, [
-  [day => ([0, 6].contains(day)), () => console.log('Have a productive weekday!')],
-  [day => (day > 0 && day < 6), () => console.log('Enjoy your weekend!')],
+  [day => (day > 0 && day < 6), () => console.log('Have a productive weekday!')],
+  [day => ([0, 6].includes(day)), () => console.log('Enjoy your weekend!')],
 ]);
 ```
 
